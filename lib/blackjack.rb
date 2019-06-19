@@ -36,7 +36,6 @@ def hit?(total)
   
     if response == "h"
       total += deal_card
-      total
     elsif response == "s"
       total
     else
