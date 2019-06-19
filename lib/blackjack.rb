@@ -15,7 +15,7 @@ def prompt_user
 end
 
 def get_user_input
-  gets
+  response = gets
 end
 
 def end_game(total)
