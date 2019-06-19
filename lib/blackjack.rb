@@ -33,18 +33,18 @@ end
 def hit?(total)
   prompt_user
   response = get_user_input
-  total2 = total
+  
   
     if response == "h"
-      total2 += deal_card
-      total2
+      total += deal_card
+      total
     elsif response == "s"
-      total2
+      total
     else
       invalid_command
       prompt_user 
     end
-  total2
+  total
 end
 
 def invalid_command
