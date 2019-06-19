@@ -36,15 +36,15 @@ def hit?(total)
   hand = 0
   
     if response == "h"
-      hand += deal_card
-      total
+      hand = total + deal_card
+      hand
     elsif response == "s"
-      total
+      hand
     else
       invalid_command
       prompt_user 
     end
-  total
+  hand
 end
 
 def invalid_command
