@@ -15,7 +15,7 @@ def prompt_user
 end
 
 def get_user_input
-  response = gets
+  response = gets.strip
 end
 
 def end_game(total)
