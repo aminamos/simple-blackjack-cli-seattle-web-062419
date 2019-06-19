@@ -31,9 +31,9 @@ def initial_round
 end
 
 def hit?(total)
+  hand = 0
   prompt_user
   response = get_user_input
-  hand = 0
   
     if response == "h"
       hand = total + deal_card
